@@ -18,5 +18,27 @@ namespace ClassRoom
             BirthMonth = birthMonth;
             Birthday = birthday;
         }
+
+        public static string Season(int birthMonth)
+        {
+            if (birthMonth == 1 || birthMonth == 2 || birthMonth == 12)
+            {
+                return "Winter";
+            }
+            if (birthMonth >= 3 && birthMonth <=5)
+            {
+                return "Spring";
+            }
+            if (birthMonth >= 6 && birthMonth <= 8)
+            {
+                return "Summer";
+            }
+            if (birthMonth >= 9 && birthMonth <= 11)
+            {
+                return "Autumn";
+            }
+
+            return "Birth month invalid";
+        }
     }
 }
