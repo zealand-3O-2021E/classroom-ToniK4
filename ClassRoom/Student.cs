@@ -19,21 +19,21 @@ namespace ClassRoom
             Birthday = birthday;
         }
 
-        public static string Season(int birthMonth)
+        public string Season()
         {
-            if (birthMonth == 1 || birthMonth == 2 || birthMonth == 12)
+            if (BirthMonth == 1 || BirthMonth == 2 || BirthMonth == 12)
             {
                 return "Winter";
             }
-            if (birthMonth >= 3 && birthMonth <=5)
+            if (BirthMonth >= 3 && BirthMonth <=5)
             {
                 return "Spring";
             }
-            if (birthMonth >= 6 && birthMonth <= 8)
+            if (BirthMonth >= 6 && BirthMonth <= 8)
             {
                 return "Summer";
             }
-            if (birthMonth >= 9 && birthMonth <= 11)
+            if (BirthMonth >= 9 && BirthMonth <= 11)
             {
                 return "Autumn";
             }

@@ -28,6 +28,11 @@ namespace ClassRoom
                 Console.WriteLine("Student Birth Month: " + Student.BirthMonth);
                 Console.WriteLine("Student Birthday: " + Student.Birthday);
             }
+
+            Console.WriteLine();
+            Classroom.SeasonCount();
+
+            Console.ReadKey();
         }
     }
 }
